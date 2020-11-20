@@ -71,7 +71,7 @@ function setup() {
     
   readgamestate = database.ref('gamestate');
   readgamestate.on("value", function(data){
-  gamestate=data.val;
+  gamestate=data.val();
   });
   
 }
